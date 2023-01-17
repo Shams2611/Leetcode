@@ -15,3 +15,7 @@ var twoSum = function(nums, target) {
     }
     return []; 
 };
+
+// One line solution
+
+const twoSum = (nums, target) => nums.reduce((acc, num, i) => { if (acc[num] !== undefined) return [acc[num], i]; acc[target - num] = i; }, {});
