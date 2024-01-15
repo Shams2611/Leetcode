@@ -9,3 +9,8 @@ var containsDuplicate = function (nums) {
     return true;
   }
 };
+
+//One line approach
+
+var isAnagram = (s, t) =>
+  s.split("").sort().join("") === t.split("").sort().join("");
