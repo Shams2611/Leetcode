@@ -9,3 +9,11 @@ def rot13(message):
             new_message += char
         
     return new_message
+
+#Creative but stupid way to do it 
+
+def rot13(message):
+    abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    cba = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+    mytable = message.maketrans(abc, cba)
+    return message.translate(mytable)
