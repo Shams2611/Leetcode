@@ -7,3 +7,12 @@ def find_even_index(arr):
             return i
         
     return -1
+
+
+#More efficient method 
+
+def find_even_index(array):
+    #your code here
+	for k,v in enumerate(array): 
+		if (sum(array[0:k]) == sum(array[k+1:])): return k
+	return -1
