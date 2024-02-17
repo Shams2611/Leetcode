@@ -9,3 +9,14 @@ def move_zeros(lst):
     zeroes = [0] * count
     
     return lst + zeroes
+
+
+#correct method 
+
+def move_zeros(lst):
+    non_zeroes = [x for x in lst if x!= 0]
+    zeroes = [0] * (len(lst) - len(non_zeroes))
+    
+    lst[:] = non_zeroes + zeroes 
+    
+    return lsts
