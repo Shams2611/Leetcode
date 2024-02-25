@@ -1,5 +1,6 @@
 # Question: https://neetcode.io/problems/anagram-groups
 # My solution
+from collections import defaultdict
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         hashMaps = defaultdict(list)
